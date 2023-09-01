@@ -2,6 +2,19 @@
 <html>
 <head>
     <title>Simple Website</title>
+    <script type="text/javascript" src="https://api.hypertarget.ai/"></script>
+    <script type="text/javascript">
+        function onloadFunction(){
+            HYPERSNIPPET.initURL(["e976c86f-4f2d-4110-afe6-013b45f0482a","c8911559-816a-43ba-8402-015d71a3a6b4"]);
+        }
+        window.onload = onloadFunction();
+        document.onclick = function (event) {
+            HYPERSNIPPET.analyzer(event,sessionStorage.getItem("key"),isLoadedForClick);
+        }
+        window.addEventListener("beforeunload", function (e) {
+            e.preventDefault();
+        })
+    </script>
 </head>
 <body>
     <header>
