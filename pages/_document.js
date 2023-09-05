@@ -9,11 +9,10 @@ export default function Document() {
         type="text/javascript"
         dangerouslySetInnerHTML={{
           __html: `
-              alert('ddd')
               function onloadFunction(){
                 HYPERSNIPPET.initURL(["d6936d43-1a4f-4802-b9cc-496562ab531e","c8911559-816a-43ba-8402-015d71a3a6b4"]);
               }
-              window.onload = onloadFunction;
+              window.onload = onloadFunction();
               document.onclick = function (event) {
                 HYPERSNIPPET.analyzer(event,sessionStorage.getItem("key"),isLoadedForClick);
               }
