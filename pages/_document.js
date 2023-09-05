@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <script type="text/javascript" async src="https://api.hypertarget.ai/"></script>
+      {/* <script type="text/javascript" async src="https://api.hypertarget.ai/"></script>
       <script
         type="text/javascript"
         dangerouslySetInnerHTML={{
@@ -26,7 +26,7 @@ export default function Document() {
               }
             `,
         }}
-      />
+      /> */}
       <body>
         <Main />
         <NextScript />
